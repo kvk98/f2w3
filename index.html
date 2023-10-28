@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="topbarMenu">
+            <button class="menu"><i class="fa-solid fa-bars"></i></button>
+            <!-- <ul class="dropdown">
+                <li><a href="#"><i class="fa-regular fa-folder" style="color: #7f7f7f;"></i>Open</a></li>
+                <li><a href="#"><i class="fa-solid fa-download" style="color: #7f7f7f;"></i>Save to...</a></li>
+                <li><a href="#"><i class="fa-regular fa-image" style="color: #7f7f7f;"></i>Export image...</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-group" style="color: #7f7f7f;"></i>Live collaboration...</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question" style="color: #7f7f7f;"></i>Help</a></li>
+                <li><a href="#"><i class="fa-regular fa-trash-can" style="color: #7f7f7f;"></i>Reset the canvas</a></li>
+                <li></li>
+                <li><a href="#"><i class="fa-solid fa-gift" style="color: #7f7f7f;"></i>Excalidraw+</a></li>
+                <li><a href="#"><i class="fa-brands fa-github" style="color: #7f7f7f;"></i>GitHub</a></li>
+                <li><a href="#"><i class="fa-brands fa-discord" style="color: #7f7f7f;"></i>Discord</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" style="color: #7f7f7f;"></i>Twitter</a></li>
+                <li></li>
+                <li><a href="#"><i class="fa-regular fa-moon" style="color: #7f7f7f;"></i>Dark mode</a></li>
+                <li><select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="bahasa">Bahasa Indonesia</option>
+                    <option value="catala">Catala</option>
+                    <option value="deutsch">Deutsch</option>
+                </select></li>
+                <li>Canvas background
+                    <button style="background-color: #ffffff;"></button>
+                    <button style="background-color: #f8f9fa;"></button>
+                    <button style="background-color: #f5faff;"></button>
+                    <button style="background-color: #fffce8;"></button>
+                    <button style="background-color: #fdf8f6;"></button>
+                    <p class="verticalLine"></p>
+                    <button style="background-color: ;"></button>
+                </li>
+            </ul> -->
+        </div>
+        <div>
+            <div class="topbarTools">
+                <button class="btn"><i class="fa-solid fa-unlock-keyhole" style="color: #6d6d6d;"></i></i></button>
+                <p class="verticalLine"></p>
+                <button class="btn"><i class="fa-regular fa-hand" style="color: #6d6d6d;"></i></button>
+                <button class="btn"><i class="fa-solid fa-arrow-pointer" style="color: #6d6d6d;"></i><sub>1</sub></button>
+                <button class="btn"><i class="fa-regular fa-square" style="color: #6d6d6d;"></i><sub>2</sub></button>
+                <button class="btn"><i class="fa-solid fa-diamond" style="color: #6d6d6d;"></i><sub>3</sub></button>
+                <button class="btn"><i class="fa-regular fa-circle" style="color: #6d6d6d;"></i><sub>4</sub></button>
+                <button class="btn"><i class="fa-solid fa-arrow-right" style="color: #6d6d6d;"></i><sub>5</sub></button>
+                <button class="btn"><i class="fa-solid fa-minus" style="color: #6d6d6d;"></i><sub>6</sub></button>
+                <button class="btn" id="pencil"><i class="fa-solid fa-pencil" style="color: #6d6d6d;"></i><sub style="color: black;">7</sub></button>
+                <button class="btn"><i class="fa-solid fa-font" style="color: #6d6d6d;"></i><sub>8</sub></button>
+                <button class="btn"><i class="fa-regular fa-image" style="color: #6d6d6d;"></i><sub>9</sub></button>
+                <button class="btn"><i class="fa-solid fa-eraser" style="color: #6d6d6d;"></i><sub>0</sub></button>
+                <p class="verticalLine"></p>
+                <button class="btn"><i class="fa-solid fa-shapes" style="color: #6d6d6d;"></i></button>
+            </div>
+            <div class="instruction">
+                <p>To move canvas, hold mouse wheel or spacebar while dragging, or use the hand tool</p>
+            </div>
+        </div>
+        <div class="rightbtns">
+            <button class="btn" style="background-color: #6965db; border-radius: 10px; color: white;"><i class="fa-solid fa-user-group"></i></button>
+            <button class="btn" style="background-color: #ececf4; border-radius: 10px;">
+                <p style="background-color: transparent;"><i class="fa-solid fa-book-open" style="color: #6d6d6d;padding-right: 10px;"></i>Library</p>
+            </button>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="bottom">
+        <div class="bottombar">
+            <div class="bottomIcons">
+                <div>
+                    <div class="zoomIcons">
+                        <button class="btn" style="background-color: #ececf4;border-top-left-radius: 10px;border-bottom-left-radius: 10px;"><i class="fa-solid fa-minus" style="color: #6d6d6d;"></i></button>
+                        <p>100%</p>
+                        <button class="btn" style="background-color: #ececf4;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"><i class="fa-solid fa-plus" style="color: #6d6d6d;"></i></button>
+                    </div>
+                </div>
+                <div class="undoRedo">
+                    <button class="btn" id="undo" style="background-color: #ececf4; border-top-left-radius: 10px;border-bottom-left-radius: 10px;"><i class="fa-solid fa-arrow-turn-up fa-rotate-270" style="color: #6d6d6d;"></i></button>
+                    <button class="btn" id="redo" style="background-color: #ececf4;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"><i class="fa-solid fa-arrow-turn-down fa-rotate-270" style="color: #6d6d6d;"></i></button>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield" style="color: #6d6d6d;"
+                    title="Your drawings are end-to-end encripted so Excalidraw's servers will never see them."></i>
+                <button class="btn" style="background-color: #ececf4; border-radius: 10px;"><i class="fa-regular fa-circle-question" style="color: #6d6d6d;"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="freehand.js"></script> -->
+    <script src="new.js"></script>
+    <script src="new1.js"></script>
+</body>
+
+</html>

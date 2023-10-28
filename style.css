@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media screen and (min) {
+    
+}
+
+*{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+i {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+}
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+
+.topbar {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.menu {
+    background-color: #ececf4;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 12px;
+}
+
+.menu:hover {
+    background-color: rgba(236, 236, 244, 0.6);
+    cursor: pointer;
+}
+.btn {
+    border: none;
+    padding: 11px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px !important;
+}
+.btn:hover{
+    background-color: #ececf3;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #e0dfff;
+    border-radius: 4px;
+    color: white;
+}
+.topbarTools {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    box-shadow: 2px 2px 6px #e1e1e1;
+    border: 1px solid #dadada;
+
+}
+.verticalLine {
+    border-right: 2px solid black;
+    display: inline;
+}
+sub {
+    font-size: xx-small;
+    padding-left: 2px;
+    background-color: transparent;
+}
+
+.rightbtns {
+    margin-right:30px ;
+}
+/* ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: left;
+    font-size: small;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+} */
+
+/* button {
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+} */
+
+
+.instruction>p{
+    text-align: center;
+    color: #c1c1c1;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+}
+
+.bottom {
+    position: absolute;
+    z-index: 100;
+    left: 20px;
+    bottom: 20px;
+}
+.bottombar {
+    display: flex;
+    justify-content: space-between;
+}
+.bottomIcons {
+    display: flex;
+}
+.bottomIcons>div:first-child {
+    padding-right: 10px;
+}
+.bottombar>div:last-child {
+    position: fixed;
+    right: 10px;
+}
+.bottombar>div:last-child>i {
+    padding: 10px;
+}
+
+.zoomIcons{
+    display: flex;
+}
+.zoomIcons>p {
+    margin: 0px;
+    padding: 10px;
+    /* border-left: 1px solid #dadada; */
+    /* border-right: 1px solid #dadada; */
+    background-color: #ececf4;
+}
+.undoRedo>button {
+    display: inline-block;
+
+}
+
